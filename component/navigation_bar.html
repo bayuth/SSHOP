@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="nav-brand">
+        <h3>
+          <a href="#">SSHOP</a>
+        </h3>
+      </div>
+      <div class="inner-nav">
+        <div class="menu-icon">
+          <img src="../img/png/menu2.png" width="20px" height="20px"alt="">
+        </div>
+        <div class="nav-menu ">
+          <ul class="menu">
+            <li class="list-menu" id="drop-menu"><a class="link-menu" href="#">SHOP</a>
+              <ul class="drop-content">
+                <li class="drop-list" id="drop2"><a class="link-menu" href="#">Clothing</a>
+                  <ul class="drop-content2">
+                    <li class="drop-list"><a class="link-menu" href="#">Hoodies</a> </li>
+                    <li class="drop-list"><a class="link-menu" href="#">T-shirt</a> </li>
+                  </ul>
+                </li>
+                <li class="drop-list" id="drop3"><a class="link-menu" href="#">Music</a>
+                  <ul class="drop-content2">
+                    <li class="drop-list"><a class="link-menu" href="#">Album</a> </li>
+                    <li class="drop-list"><a class="link-menu" href="#">Singles</a> </li>
+                  </ul>
+                </li>
+                <li class="drop-list"><a class="link-menu" href="#">Poster</a> </li>
+                <li class="drop-list"><a class="link-menu" href="#">Accessories</a> </li>
+              </ul>
+            </li>
+            <li class="list-menu"><a class="link-menu" href="#">CLOTHING</a> </li>
+            <li class="list-menu"><a class="link-menu" href="#">ACCESSORIES</a> </li>
+            <li class="list-menu"><a class="link-menu" href="#">SINGLE PRODUCT</a> </li>
+            <li class="list-menu"><a class="link-menu" href="#">BLOG</a> </li>
+            <li class="list-menu"><a class="link-menu" href="#">CONTACT</a> </li>
+          </ul>
+        </div>
+        <div class="ext-menu">
+          <ul class="add-menu">
+            <li class="list-menu drop" id="drop-whist"><a class="link-menu" href="#"><img src="../img/png/likes.png" alt="Wishlist"> </a>
+              <div class="drop-box">
+                <div class="add-drop">
+                  <ul>
+                    <li>
+                      <div class="product">
+                        <a href="#">
+                          <div class="pict">
+                            <img src="../img/png/product1.jpg" alt="">
+                          </div>
+                          <div class="desc">
+                            <p class="title">Cool Hoodie</p>
+                            <p>$33.00</p>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="del">
+                            <img src="../img/png/x.png" alt="">
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="to-cart" style="margin-right:3px;">
+                            <img src="../img/png/carts.png" alt="">
+                          </div>
+                        </a>
+
+                      </div>
+                     </li>
+
+                  </ul>
+                </div>
+                <div class="act2">
+                  <a class="view-list" href="#">View Wishlist</a>
+                  <a class="Add All" href="#">Add All to Cart</a>
+                </div>
+              </div>
+
+            <li class="list-menu drop" id="cart-drop"><a class="link-menu" href="#"><img src="../img/png/carts.png" alt="Cart"> </a>
+              <div class="drop-box">
+                <div class="add-drop">
+                  <ul>
+                    <li>
+                      <div class="product">
+                        <a href="#">
+                          <div class="pict">
+                            <img src="../img/png/product1.jpg" alt="">
+                          </div>
+                          <div class="desc">
+                            <p class="title">Cool Hoodie</p>
+                            <p>1 x $33.00</p>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="del">
+                            <img src="../img/png/x.png" alt="">
+                          </div>
+                        </a>
+
+                      </div>
+                     </li>
+
+
+
+                  </ul>
+                </div>
+                <div class="act2">
+                  <p>Total: $33.00</p>
+
+                  <a class="view-cart" href="#">View Cart</a>
+                  <a class="checkout" href="#">Checkout</a>
+                </div>
+              </div>
+
+             </li>
+            <li class="list-menu" id="user-control"><a class="link-menu" href="#"><img src="../img/png/user.png" alt="User"></a>
+              <ul class="drop-content">
+                <li class="drop-list"><a class="link-menu" href="#">Dashboard</a> </li>
+                <li class="drop-list"><a class="link-menu" href="#">Log Out</a> </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <script src="../jquery/jquery-3.3.1.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.js"></script> -->
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.menu-icon').click(function(){
+          $('.nav-menu').toggleClass('clicked')
+        });
+      });
+    </script>
+
+  </body>
+</html>
